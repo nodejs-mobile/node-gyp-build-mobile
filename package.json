@@ -1,7 +1,7 @@
 {
-  "name": "node-gyp-build",
+  "name": "node-gyp-build-mobile",
   "version": "4.6.0-1",
-  "description": "Build tool and bindings loader for node-gyp that supports prebuilds",
+  "description": "nodejs-mobile fork of node-gyp-build",
   "main": "index.js",
   "devDependencies": {
     "array-shuffle": "^1.0.1",
@@ -9,21 +9,21 @@
     "tape": "^5.0.0"
   },
   "scripts": {
-    "test": "standard && node test"
+    "test": "standard"
   },
   "bin": {
-    "node-gyp-build": "./bin.js",
-    "node-gyp-build-optional": "./optional.js",
-    "node-gyp-build-test": "./build-test.js"
+    "node-gyp-build-mobile": "./bin.js",
+    "node-gyp-build-mobile-optional": "./optional.js",
+    "node-gyp-build-mobile-test": "./build-test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/prebuild/node-gyp-build.git"
+    "url": "https://github.com/nodejs-mobile/node-gyp-build-mobile.git"
   },
   "author": "Mathias Buus (@mafintosh)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/prebuild/node-gyp-build/issues"
+    "url": "https://github.com/nodejs-mobile/node-gyp-build-mobile/issues"
   },
-  "homepage": "https://github.com/prebuild/node-gyp-build"
+  "homepage": "https://github.com/nodejs-mobile/node-gyp-build-mobile"
 }
