@@ -7,7 +7,7 @@ var test = null
 
 try {
   var pkg = require(path.join(process.cwd(), 'package.json'))
-  if (pkg.name && process.env[pkg.name.toUpperCase().replace(/-/g, '_')]) {
+  if (pkg.name && process.env[pkg.name.toUpperCase().replace(/@/g, '').replace(/\//g, '__').replace(/-/g, '_')]) {
     process.exit(0)
   }
   test = pkg.prebuild.test
